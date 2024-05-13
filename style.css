@@ -1,0 +1,296 @@
+/* ----- CUSTOM CSS ----- */
+.light {
+    font-weight: 400;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.grey {
+    color: grey;
+}
+
+.bg-grey {
+    background-color: rgb(230, 230, 230);
+    border: none!important;
+}
+
+/* ----- GENERAL ----- */
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    color: black;
+    font-size: 20px;
+}
+
+.divider {
+    border-bottom: 1px solid lightgray;
+}
+
+.container {
+    width: 100vw;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a.btn:hover, h5.btn:hover {
+    background-color: rgb(230, 230, 230);
+    transition: 0.5s;
+}
+
+/* ----- HEADER ----- */
+header {
+    padding: 20px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 10px 15px #f0f0f0;
+}
+
+nav.account-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav.account-menu .user {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    background-color: red;
+}
+
+/* ----- MAIN ----- */
+main {
+    background-color: #f9f9f9;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    gap: 50px;
+    margin-bottom: 182px;
+    z-index: 1;
+    box-shadow: 0 10px 15px #cdcdcd;
+}
+
+/* ----- ASIDE ----- */ 
+.widget {
+    flex: 1;
+    height: fit-content;
+    position: sticky;
+    top: 136px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.widget .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.account .account-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.widget .recommended, .widget .follow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommended .recommended-box {
+    display: flex; 
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.follow .follow-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.follow-box .title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.follow-box h5.btn {
+    padding: 7px 10px;
+}
+
+.recently-saved {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link .link-box {
+    display: flex;
+    gap: 10px;
+}
+
+/* ----- CONTENT ----- */
+.content {
+    flex: 4;
+    padding: 50px 50px 50px 0;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgrey;
+}
+
+nav.inner-menu {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+/* DA USARE IN CASO DI ELEMENTO ATTIVO
+nav.inner-menu a:active {
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding-bottom: 11px;
+}
+*/
+
+.inner-menu a span.active {
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding-bottom: 11px;
+}
+
+article {
+    display: flex;
+    gap: 50px;
+}
+
+article .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 4;
+}
+
+.text-box .user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+.text-box .tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag .tag-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tag-box h5 {
+    font-weight: 400;
+}
+
+.tag-box h5.btn {
+    padding: 5px 10px;
+}
+
+.tag .tag-icons {
+    display: flex;
+    gap: 15px;
+}
+
+article .img-box {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.img-box img {
+    height: 100%;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #d7d7d7;
+    width: 100vw;
+    padding: 50px 5vw 70px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    gap: 20px;
+    z-index: 0;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1921px) {
+    header {
+        padding: 20px 10vw;
+    }
+
+    main {
+        padding: 0 10vw;
+    }
+
+    footer {
+        padding: 50px 10vw 70px;
+    }
+}
